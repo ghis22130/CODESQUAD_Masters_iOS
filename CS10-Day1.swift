@@ -13,7 +13,6 @@ func halfadder(_ bitA:Bool, _ bitB:Bool) -> [Bool] {
     return [bitA&&bitB,sum]
 }
 
-
 func fulladder(_ bitA:Bool, _ bitB:Bool, _ carry:Bool) -> [Bool] {
     let sumTwoBit = xor(bitA, bitB)
     let sumWithCarry = xor(sumTwoBit,carry)
@@ -33,6 +32,22 @@ func byteadder(_ byteA:[Bool], _ byteB:[Bool]) -> [Bool] {
     answer.append(carry)
     return answer
 }
+
+print(halfadder(true, true))
+print(halfadder(false, true))
+print(halfadder(true, false))
+print(halfadder(false, false))
+
+print(fulladder(true, true, true))
+print(fulladder(true, false, true))
+
+let byteA = [true, true, false, true, true, false, true, false]
+let byteB = [true, false, true, true, false, false, true, true]
+let byteC = [true, true, false, false, true, false, true, false]
+let byteD = [true, true, false, true, true, false , false, true]
+
+print(byteadder(byteA, byteB))
+print(byteadder(byteC, byteD))
 
 //MARK: - 진법 변환기
 func dec2bin(_ decimal: Int) -> [Bool] {
@@ -61,26 +76,7 @@ func bin2dec(_ bin:[Bool]) -> Int {
     }
     return answer
 }
-print(halfadder(true, true))
-print(halfadder(false, true))
-print(halfadder(true, false))
-print(halfadder(false, false))
 
-print(fulladder(true, true, true))
-print(fulladder(true, false, true))
-
-let byteA = [true, true, false, true, true, false, true, false]
-let byteB = [true, false, true, true, false, false, true, true]
-let byteC = [true, true, false, false, true, false, true, false]
-let byteD = [true, true, false, true, true, false , false, true]
-
-print(byteadder(byteA, byteB))
-print(byteadder(byteC, byteD))
-var answer = [Bool](repeating: false, count: 8)
 print(dec2bin(173))
-
-let f = false
-
-
 print(bin2dec([false, true, true, true]))
 print(bin2dec([true, true, true, true, false, true, false, true]))
