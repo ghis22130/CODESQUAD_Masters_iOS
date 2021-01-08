@@ -53,3 +53,23 @@
 
 # 🔌  ssh 연결
 - 참고한 사이트 : <a href="https://velog.io/@younho9/Mac-%EB%B2%84%EC%B6%94%EC%96%BC%EB%B0%95%EC%8A%A4VirtualBox%EC%97%90-%EC%84%A4%EC%B9%98%EB%90%9C-%EC%9A%B0%EB%B6%84%ED%88%ACUbuntu-%EB%A7%A5-%ED%84%B0%EB%AF%B8%EB%84%90%EC%97%90%EC%84%9C-%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0">[Mac] 버추얼박스(VirtualBox)에 설치된 우분투(Ubuntu) 맥 터미널에서 접속하기</a>
+
+## iterm에서  Ubuntu SSH 원격 접속
+```
+ssh dumba@192.168.56.101
+```
+<img src="https://github.com/ghis22130/CODESQUAD_Masters_iOS/blob/main/images/cs10-day2/ms01-03.png?raw=true" width="90%">
+
+## backup 디렉토리 생성 후 접근 권한 부여
+```
+mkdir backup
+chmod 764 backup
+ls -al
+``` 
+<img src="https://github.com/ghis22130/CODESQUAD_Masters_iOS/blob/main/images/cs10-day2/ms01.png?raw=true" width="90%">
+
+## Linux 현재 시간 출력 해보기
+```
+date "+%Y-%m-%d"
+```
+<img src="https://github.com/ghis22130/CODESQUAD_Masters_iOS/blob/main/images/cs10-day2/ms01-02.png?raw=true" width="90%">
