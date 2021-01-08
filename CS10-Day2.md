@@ -71,5 +71,53 @@ ls -al
 ## Linux 현재 시간 출력 해보기
 ```
 date "+%Y-%m-%d"
+// or
+date
 ```
 <img src="https://github.com/ghis22130/CODESQUAD_Masters_iOS/blob/main/images/cs10-day2/ms01-02.png?raw=true" width="90%">
+
+# 📃 쉘 스크립트 작성
+- `day1`부터 `day16`까지 디렉토리를 순회하며 각 디렉토리 안 `.cs`확장자  파일이 있는지 없는지 확인할 수 있는 조건문 부터 작성해 보았다.
+```.sh
+#!/bin/bash
+
+for((i=1;i<=16;i++))
+do
+        if [ -e ~/desktop/cs/day$i/*.cs ];then
+                echo "day$i is not empty"
+        else
+                echo "dat$i is empty"
+        fi;
+done
+```
+- 실행 화면
+<img width="762" alt="쉘1" src="https://user-images.githubusercontent.com/41679458/103980906-186a6d80-51c4-11eb-8a77-68de08de150d.png">
+
+- 각 디렉토리를 순회하여 `.cs`의 확장자 파일이 존재한 디렉토리들을 모아 `backup_(현재날짜).zip`의 파일을 만든다. 만약 디렉토리에 `.cs`확장자가 존재하지 않으면 `day$i is empty`를 출력한다.
+
+<img width="762" alt="쉘2" src="https://user-images.githubusercontent.com/41679458/103985703-c417bb80-51cc-11eb-825b-8a12255696fc.png">
+
+```.sh
+#!/bin/bash
+
+FE="*.cs"
+DATE=$(date "+%Y%m%d")
+PREFIX=day
+LIST=""
+
+for((i=1;i<16;i++))
+do
+        NAME=$PREFIX$i
+        if [[ -n $(find ./$NAME -name $FE) ]]; then
+                LIST+=" $NAME/$FE"
+        else
+                echo "$NAME is empty"
+        fi
+done
+echo "$LIST"
+
+BACKUP="backup_$DATE.zip"
+echo "$BACKUP"
+
+zip $BACKUP $LIST
+```
