@@ -92,7 +92,6 @@ done
 ```
 - 실행 화면
 <img width="762" alt="쉘1" src="https://user-images.githubusercontent.com/41679458/103980906-186a6d80-51c4-11eb-8a77-68de08de150d.png">
-
 - 각 디렉토리를 순회하여 `.cs`의 확장자 파일이 존재한 디렉토리들을 모아 `backup_(현재날짜).zip`의 파일을 만든다. 만약 디렉토리에 `.cs`확장자가 존재하지 않으면 `day$i is empty`를 출력한다.
 
 <img width="762" alt="쉘2" src="https://user-images.githubusercontent.com/41679458/103985703-c417bb80-51cc-11eb-825b-8a12255696fc.png">
@@ -121,3 +120,7 @@ echo "$BACKUP"
 
 zip $BACKUP $LIST
 ```
+## scp 명령어를 이용하여 Linux로 파일 전송하기
+
+    scp $BACKUP dumba@192.168.56.101:    
+<img width="762" alt="쉘3" src="https://user-images.githubusercontent.com/41679458/103987538-f8d94200-51cf-11eb-9dd4-2cd5c577b662.png">
