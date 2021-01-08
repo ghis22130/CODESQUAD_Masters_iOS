@@ -39,5 +39,17 @@
     <img src="https://github.com/ghis22130/CODESQUAD_Masters_iOS/blob/main/images/cs10-day2/%EC%9A%B0%EB%B6%84%ED%88%AC%EC%84%A4%EC%B9%985.png?raw=true" width="90%">
     <img src="https://github.com/ghis22130/CODESQUAD_Masters_iOS/blob/main/images/cs10-day2/%EC%9A%B0%EB%B6%84%ED%88%AC%EC%84%A4%EC%B9%986.png?raw=true" width="90%">
 
-- 과정을 다 진행하면 일정 시간 후 
+- 과정을 다 진행하면 일정 시간 후 내가 설정한 서버가 생성된 것을 확인 할 수 있다.
+    <img src="https://github.com/ghis22130/CODESQUAD_Masters_iOS/blob/main/images/cs10-day2/%EC%9A%B0%EB%B6%84%ED%88%AC01.png?raw=true" width="90%">
+- 설정 탭을 클릭 후 저장소 탭으로 이동하여 `광학드라이브` 옆 CD를 클릭한 다음 이전에 받아두었던 우분투 이미지를 끌어다 놓는다.
     <img src="https://github.com/ghis22130/CODESQUAD_Masters_iOS/blob/main/images/cs10-day2/%EC%9A%B0%EB%B6%84%ED%88%AC%EC%84%A4%EC%B9%987.png?raw=true" width="90%">
+
+    <img src="https://github.com/ghis22130/CODESQUAD_Masters_iOS/blob/main/images/cs10-day2/%EC%9A%B0%EB%B6%84%ED%88%AC%EC%84%A4%EC%B9%988.png?raw=true" width="90%">
+
+- 이미지를 드래그하고 우분투 서버를 실행하면 비로소 우분투 설치를 진행할 수 있다.
+    <img src="https://github.com/ghis22130/CODESQUAD_Masters_iOS/blob/main/images/cs10-day2/%EC%9A%B0%EB%B6%84%ED%88%AC%EC%84%A4%EC%B9%989.png?raw=true" width="90%">
+- 설치가 완료된 모습
+    <img src="https://github.com/ghis22130/CODESQUAD_Masters_iOS/blob/main/images/cs10-day2/%EC%9A%B0%EB%B6%84%ED%88%AC%EC%84%A4%EC%B9%9815.png?raw=true" width="90%">
+
+# 🔌  ssh 연결
+- 참고한 사이트 : <a href="https://velog.io/@younho9/Mac-%EB%B2%84%EC%B6%94%EC%96%BC%EB%B0%95%EC%8A%A4VirtualBox%EC%97%90-%EC%84%A4%EC%B9%98%EB%90%9C-%EC%9A%B0%EB%B6%84%ED%88%ACUbuntu-%EB%A7%A5-%ED%84%B0%EB%AF%B8%EB%84%90%EC%97%90%EC%84%9C-%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0">[Mac] 버추얼박스(VirtualBox)에 설치된 우분투(Ubuntu) 맥 터미널에서 접속하기</a>
