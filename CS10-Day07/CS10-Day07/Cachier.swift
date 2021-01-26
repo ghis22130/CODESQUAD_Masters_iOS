@@ -7,20 +7,20 @@
 
 import Foundation
 
-enum Menu {
-    case 아메리카노
-    case 카페라떼
-    case 프라프치노
-}
 
 class Cachier {
-    func takeOrder() {
-        DispatchQueue.main.async {
-            let order = readLine()?.components(separatedBy: ":")
-
-        }
-        
+    var orderList : OrderList
+    
+    init(_ orderList: OrderList) {
+        self.orderList = orderList
     }
     
-    
+    func takeOrder() {
+            print(">",terminator:" ")
+            let order = readLine()!.components(separatedBy: ":").map{Int($0)!}
+            let menu = order[0]
+            let count = order[1]
+            for _ in 0..<count { orderList.addOrderList(newOrder: menu) }
+        
+    }
 }

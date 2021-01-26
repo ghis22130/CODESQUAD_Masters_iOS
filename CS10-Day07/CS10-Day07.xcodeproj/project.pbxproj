@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FF42ECAE25BE9DCB00F881B9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42ECAD25BE9DCB00F881B9 /* main.swift */; };
+		FF2FC9C625BFDA030040FF27 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2FC9C525BFDA030040FF27 /* Menu.swift */; };
+		FF2FC9CA25BFF6680040FF27 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2FC9C925BFF6680040FF27 /* main.swift */; };
 		FF42ECB625BE9DD500F881B9 /* Cachier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42ECB525BE9DD500F881B9 /* Cachier.swift */; };
-		FF42ECB925BEA03500F881B9 /* NumberTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42ECB825BEA03500F881B9 /* NumberTicket.swift */; };
+		FF42ECB925BEA03500F881B9 /* OrderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42ECB825BEA03500F881B9 /* OrderList.swift */; };
 		FF42ECBC25BEA03E00F881B9 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42ECBB25BEA03E00F881B9 /* Manager.swift */; };
 		FF42ECBF25BEA04600F881B9 /* Baristar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42ECBE25BEA04600F881B9 /* Baristar.swift */; };
 		FF42ECC225BEA13700F881B9 /* DashBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF42ECC125BEA13700F881B9 /* DashBoard.swift */; };
@@ -28,10 +29,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FF2FC9C525BFDA030040FF27 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		FF2FC9C925BFF6680040FF27 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../../../Downloads/main.swift; sourceTree = "<group>"; };
 		FF42ECAA25BE9DCB00F881B9 /* CS10-Day07 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CS10-Day07"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF42ECAD25BE9DCB00F881B9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		FF42ECB525BE9DD500F881B9 /* Cachier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cachier.swift; sourceTree = "<group>"; };
-		FF42ECB825BEA03500F881B9 /* NumberTicket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTicket.swift; sourceTree = "<group>"; };
+		FF42ECB825BEA03500F881B9 /* OrderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderList.swift; sourceTree = "<group>"; };
 		FF42ECBB25BEA03E00F881B9 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		FF42ECBE25BEA04600F881B9 /* Baristar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baristar.swift; sourceTree = "<group>"; };
 		FF42ECC125BEA13700F881B9 /* DashBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoard.swift; sourceTree = "<group>"; };
@@ -67,11 +69,12 @@
 		FF42ECAC25BE9DCB00F881B9 /* CS10-Day07 */ = {
 			isa = PBXGroup;
 			children = (
-				FF42ECAD25BE9DCB00F881B9 /* main.swift */,
+				FF42ECB825BEA03500F881B9 /* OrderList.swift */,
 				FF42ECB525BE9DD500F881B9 /* Cachier.swift */,
 				FF42ECBE25BEA04600F881B9 /* Baristar.swift */,
+				FF2FC9C925BFF6680040FF27 /* main.swift */,
 				FF42ECBB25BEA03E00F881B9 /* Manager.swift */,
-				FF42ECB825BEA03500F881B9 /* NumberTicket.swift */,
+				FF2FC9C525BFDA030040FF27 /* Menu.swift */,
 				FF42ECC125BEA13700F881B9 /* DashBoard.swift */,
 			);
 			path = "CS10-Day07";
@@ -135,8 +138,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF42ECC225BEA13700F881B9 /* DashBoard.swift in Sources */,
-				FF42ECB925BEA03500F881B9 /* NumberTicket.swift in Sources */,
-				FF42ECAE25BE9DCB00F881B9 /* main.swift in Sources */,
+				FF2FC9CA25BFF6680040FF27 /* main.swift in Sources */,
+				FF42ECB925BEA03500F881B9 /* OrderList.swift in Sources */,
+				FF2FC9C625BFDA030040FF27 /* Menu.swift in Sources */,
 				FF42ECB625BE9DD500F881B9 /* Cachier.swift in Sources */,
 				FF42ECBC25BEA03E00F881B9 /* Manager.swift in Sources */,
 				FF42ECBF25BEA04600F881B9 /* Baristar.swift in Sources */,
