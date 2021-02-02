@@ -6,29 +6,39 @@ class Requester {
     private var host:NWEndpoint.Host
     private var port:NWEndpoint.Port
     private var parameter: NWParameters
-    private var header = """
-    GET / HTTP/1.1
-    Host: www.khan.co.kr
-    User-Agent: Mozilla/5.0
-    Accept: text/html
-    """
+    private var header : String = ""
     
     init(host:NWEndpoint.Host, port:NWEndpoint.Port, parameter: NWParameters) {
         self.host = host
         self.port = port
         self.parameter = parameter
-//        self.header = self.createHeader(host)
+        self.createHeader(host)
     }
 
-//    func createHeader(_ host : NWEndpoint.Host)->String{
-//        var url = host.debugDescription
-//    }
-    func startConnection() {
+    func createHeader(_ host : NWEndpoint.Host){
+        let url = host.debugDescription.components(separatedBy: ".")[1]
+        switch url {
+        case "disney":
+            header = Header.disney
+        case "khan":
+            header = Header.khan
+        case "hani":
+            header = Header.hani
+        case "kyobobook":
+            header = Header.kyobo
+        case "yes24":
+            header = Header.yes24
+        default:
+            print("Sorry, Unsupported URL")
+        }
+
+    }
+    
+    func createConnection() {
         let connection = NWConnection(host: host, port: port, using: parameter)
         connection.stateUpdateHandler = { state in
             switch state {
             case .ready:
-                print(self.host.debugDescription)
                 print("🙌 Connection is success!")
                 self.sendMessage(connection)
             case .waiting(let error):
@@ -58,8 +68,8 @@ class Requester {
         print("Receiving Data....Wait a minute🙏")
         connection.receiveMessage(completion: {data, context, bool, error in
             if let data = data {
-                print("\n\n", String(data: data, encoding: .utf8)! )
-            } else { print("Error:", error!) }
+                print("\n\n", String(data: data, encoding: .utf8) ?? "Empty" )
+            } else { print("Error:", error) }
         })
     }
 }

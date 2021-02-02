@@ -8,21 +8,17 @@
 import Foundation
 import Network
 
-//func enterURL() -> String{
-//    let line = readLine()?.components(separatedBy: ".")
-//    let url = line?[1]
-//
-//    switch url {
-//    case "disney":
-//        return Header.disney
-//    default:
-//
-//    }
-//}
-//
-//enterURL()
-var requester = Requester(host: "www.disney.co.kr", port: 80, parameter: .tcp)
-requester.startConnection()
+print("""
+    +==========================================================+
+    1: www.yes24.com  2: www.disney.co.kr  3: www.khan.co.kr  \n4: www.hani.com   5: www.kyobobook.co.kr
+    +==========================================================+
+    """)
+
+print("Please enter the URL >>",terminator : " ")
+let line = readLine()
+
+var requester = Requester(host: NWEndpoint.Host(line!), port: 80, parameter: .tcp)
+requester.createConnection()
 
 while requester.running {
     sleep(1)

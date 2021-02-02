@@ -11,15 +11,13 @@ struct Header {
     static let disney : String = """
     GET /home/index.jsp HTTP/1.1
     Host: www.disney.co.kr
-    User-Agent: Mozilla/5.0
-    Accept: text/html
+    Accept-Language: en-US,en;q=0.9,ko;q=0.8
     """
     
     static let khan : String = """
     GET / HTTP/1.1
     Host: www.khan.co.kr
-    User-Agent: Mozilla/5.0
-    Accept: text/html
+    Accept-Language: en-US,en;q=0.9,ko;q=0.8
     """
     
     
